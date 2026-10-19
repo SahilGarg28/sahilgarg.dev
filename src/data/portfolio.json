@@ -1,0 +1,96 @@
+{
+  "site": {
+    "title": "Sahil Garg — Software Engineer",
+    "description": "Portfolio of Sahil Garg, Software Engineer focused on backend, platform automation, Kafka observability, and production AI/RCA systems.",
+    "keywords": "software engineer, Java, Spring Boot, Kafka, backend, platform automation, LangChain, portfolio",
+    "canonicalUrl": "",
+    "ogImage": "",
+    "resumePath": "/resume.pdf",
+    "resumeDownloadFilename": "Sahil-Garg-Resume.pdf"
+  },
+  "personalInfo": {
+    "name": "Sahil Garg",
+    "title": "Software Engineer | Backend & Platform Automation",
+    "location": {
+      "city": "Gurugram, Haryana",
+      "country": "India"
+    },
+    "website": "linkedin.com/in/sahil-garg-3530901b5",
+    "email": "sahilgarg2801@gmail.com",
+    "avatar": "/pp.jpg",
+    "bio": "Java backend engineer with ~1.5 years in regulated NBFC lending, owning shared platform services — Drools/Spring Boot credit decisioning, Kafka-backed microservices observability, multi-product compliance pipelines, and a production LangChain RCA stack (RAG, on-prem LLM, MCP/Jira). Spot Award, Capri Global Capital (2025).",
+    "skills": "Java, Python, Spring Boot, REST APIs, Drools, Apache Kafka, JUnit, Microservices, MongoDB, MySQL, Redis, DynamoDB, OpenSearch, AWS (S3, Lambda), Grafana, Loki, Jenkins, Selenium, Playwright, LangChain, RAG, MCP"
+  },
+  "profilePhotos": [
+    { "src": "/pp-cafe.jpg", "durationMs": 10000 },
+    { "src": "/pp.jpg", "alt": "Sahil Garg at a cafe", "durationMs": 5000 }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Capri Global Capital Ltd.",
+      "role": "Software Engineer",
+      "location": "Gurugram, Haryana, India",
+      "startDate": "2025-02",
+      "endDate": null,
+      "highlights": [
+        "Production incident RCA agent (LangChain, RAG, on-prem LLM, MCP/Jira) correlating Loki logs and Kafka errors across Spring Boot services — ~40% lower MTTD on P1/P2.",
+        "Drools rules + Spring Boot APIs for loan credit decisioning; JUnit health checks and regression for 500+ applications/month.",
+        "Multi-product compliance reporting (Python, Grafana/Loki, AWS S3, Jenkins) for CapriLoans, Capri Home Loans, and WhatsApp — ~8 hours saved per cycle.",
+        "Selenium calling-data reconciliation and Playwright regression/smoke suites across UAT and production."
+      ],
+      "current": true
+    }
+  ],
+  "writing": [],
+  "speaking": [],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "AgentLoop",
+      "description": "Autonomous coding assistant with multi-step planning, file I/O, and shell execution. Modular Spring tool-invocation framework (5+ tools; under 10 lines of config to add a new capability).",
+      "techStack": ["Java", "Spring", "LLM", "Tool-Calling Agents"],
+      "status": "active"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Chandigarh University",
+      "degree": "B.Tech",
+      "field": "Computer Science & Engineering",
+      "startYear": "2020",
+      "endYear": "2024",
+      "location": "Mohali, Punjab",
+      "details": "CGPA: 7.8"
+    }
+  ],
+  "contactPage": {
+    "headline": "Contact me",
+    "intro": "Open to backend/platform roles, consulting, and interesting builds. Email is best; I usually reply within a couple of days."
+  },
+  "buyMeCoffee": {
+    "enabled": true,
+    "headline": "Buy me a coffee",
+    "message": "If my work or write-ups helped you, a small tip keeps me caffeinated while I ship more open tooling. Scan the QR with any UPI app — thank you.",
+    "upiQrImage": "/upi-qr.png",
+    "externalUrl": ""
+  },
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "username": "sahil-garg",
+      "url": "https://www.linkedin.com/in/sahil-garg-3530901b5/"
+    },
+    {
+      "platform": "GitHub",
+      "username": "SahilGarg28",
+      "url": "https://github.com/SahilGarg28"
+    },
+    {
+      "platform": "LeetCode",
+      "username": "sahil_garg_2801",
+      "url": "https://leetcode.com/u/sahil_garg_2801"
+    }
+  ]
+}
