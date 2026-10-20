@@ -30,6 +30,7 @@ import Shape9Page from "./pages/shapes/Shape9Page";
 import Shape10Page from "./pages/shapes/Shape10Page";
 import ContactPage from "./pages/ContactPage";
 import BuyMeCoffeePage from "./pages/BuyMeCoffeePage";
+import { AnalyticsRouteTracker } from "@/components/AnalyticsRouteTracker";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <AnalyticsRouteTracker />
             <Routes>
               <Route path="/" element={<Hero1Page />} />
               <Route path="/contact" element={<ContactPage />} />

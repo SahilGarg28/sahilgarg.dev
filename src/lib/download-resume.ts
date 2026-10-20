@@ -1,4 +1,5 @@
 import { site } from "@/data/portfolio-data";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Fetches the resume in-page and saves it as a blob. A plain link download
@@ -20,8 +21,10 @@ export async function downloadResume(e?: { preventDefault: () => void }) {
     document.body.appendChild(a);
     a.click();
     a.remove();
+    trackEvent("resume_download", { method: "blob" });
     setTimeout(() => URL.revokeObjectURL(url), 30_000);
   } catch {
+    trackEvent("resume_download", { method: "fallback" });
     window.open(resumePath, "_blank");
   }
 }

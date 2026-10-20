@@ -3,6 +3,7 @@ import ProfilePhoto from "@/components/ProfilePhoto";
 import SplitSection from "@/components/ui/split-section";
 import ResumeButton from "@/components/ResumeButton";
 import { Link } from "react-router-dom";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * ContactSection Component
@@ -23,6 +24,7 @@ export default function ContactSection() {
 
         <a
           href={`mailto:${personalInfo.email}`}
+          onClick={() => trackEvent("contact_email_click", { location: "contact_section" })}
           className="text-body hover:text-[var(--color-primary)] transition-colors block"
         >
           {personalInfo.email}

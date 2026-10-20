@@ -8,6 +8,7 @@ import {
   socialLinks,
 } from "@/data/portfolio-data";
 import { ArrowLeft, Mail, MapPin } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function ContactPage() {
   const locationLabel = [personalInfo.location.city, personalInfo.location.country]
@@ -41,6 +42,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={`mailto:${personalInfo.email}`}
+                  onClick={() => trackEvent("contact_email_click", { location: "contact_page" })}
                   className="text-large hover:text-[var(--color-primary)] transition-colors break-all"
                 >
                   {personalInfo.email}
